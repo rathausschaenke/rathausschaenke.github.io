@@ -1,32 +1,88 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    </head>
+    <style>
+        body {
+            background-color: #111;
+            text-align: center;
+            color: #FFF;
+        }
+        h1 {
+            background-image: url(media/header.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            display:block;
+            height: 100%;
+            font-size: 0px;
+        }
+        #screen {
+            width: 1080px;
+            height: 1920px;
+            margin: 0px auto;
+            display: block;
+        }  
+        #screen #top {
+            border-bottom: 1px #000;
+            height: 400px;
+            display: block;
+
+        }  
+        #screen #body {
+            height: 1220px;
+            display: block;
+        }
+        #screen #body p {
+            font-size: 50px;
+        }
+        #screen #body .live {
+            color: #b57f00;
+        }
+        #screen #body h4 {
+            margin-bottom: 100px;
+        }
+        #screen #bottom {
+            border-bottom: 1px #000;
+            height: 300px;
+            display: block;
+        }
+        #screen #bottom #qr {
+            background-image: url(media/qr.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            display:block;
+            height: 80%;
+            font-size: 0px;
+        }
+    </style>
 <body>
-    <div>
-        <h1>Rathausschaenke Bottrop</h1>
+    <div id="screen">
+        <div id="top">
+            <h1>Rathausschaenke Bottrop</h1>
+        </div>
+        <div id="body">
+            <h3 class="display-6">Samstag, 18.01. 20 Uhr <span class="live">LIVE</span></h3>
+            <h2 class="display-1">LILLY VAN JANSEN</h2>
+            <h4 class="display-6">Alternative Rock-Pop</h4>
+
+            <h3 class="display-6">Freitag, 31.01. 20 Uhr  <span class="live">LIVE</span></h3>
+            <h2 class="display-1">PUNK ROCK MEETING</h2>
+            <h4 class="display-6">mit &ldquo;Jule ... und der Andere&ldquo;</h4>
+            
+            <h3 class="display-6">Valentinstag, 14.02.24 20 Uhr</h3>
+            <h2 class="display-1">SINGLE & DANCE PARTY</h2>
+            <h4 class="display-6">Music by ShuffleAffe</h4>
+            
+            <h3 class="display-6">Donnerstag, 27.02.24 18 Uhr</h3>
+            <h2 class="display-1">ALTWEIBER-PARTY</h2>
+            <h4 class="display-6">Music by ShuffleAffe</h4>
+        </div>
+        <div id="bottom">
+            <span id="qr">QR-Code</span>
+        </div>
     </div>
-    <div>
-        <h2>
-            Samstag, 18.01. 20 Uhr</br>
-            LILLY VAN JANSEN</br>
-            Alternative Rock-Pop
-        </h2>
-        <h2>
-            Freitag, 31.01. 20 Uhr  </br>
-            PUNK ROCK MEETING</br>
-            mit “Jule…und der andere”
-        </h2>
-        <h2>
-            Valentinstag, 14.02.24 20 Uhr</br>
-            SINGLE & DANCE PARTY</br>
-            Music by ShuffleAffe
-        </h2>
-        <h2>
-            Donnerstag, 27.02.24 18 Uhr</br>
-            ALTWEIBER-PARTY</br>
-            Music by ShuffleAffe
-        </h2>
-    </div>
-    <div>QR-Code etc.</div>
 
 </body>
 </html>
